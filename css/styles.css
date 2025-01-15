@@ -1,0 +1,99 @@
+/* Estilos para el sitio Documentos familiares
+Coder house entrega 01 
+*/
+/* reset de CSS de los elementos de default que aplican los navegadores 
+*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+h1 {
+    /* asignamos la fuente cargada desde:  https://fonts.google.com/selection/embed 
+          ver link en head */
+    font-family: "Imperial Script", serif;
+    font-weight: 700;
+    color: black;
+}
+
+/* para los elementos que tengan las class="" debe empezar con . (punto) */
+
+.ulBarraNavegacion {
+    /* Eliminamos las viñetas */
+    list-style-type: none;
+}
+
+.liBarraNavegacion {
+    /* que muestre horizontalmente*/
+    display: inline;
+    /* Agregamos un margen para separar los elementos */
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.liBarraNavegacion a {
+    /*elimino el subrayado en los links de la barra de navegacion*/
+    text-decoration: none;
+    /* blue mas claro*/
+    color: rgb(66, 66, 226);
+}
+
+header div nav img {
+    /* los iconos home e ingresar de la barra horizontal */
+    width: 15px;
+}
+
+.imgAbuelosHome {
+    /* la foto del home */
+    width: 300px;
+    border-radius: 10px;
+    /*object-fit: contain;*/
+    /*mantiene la relación de aspecto?*/
+}
+
+.imgTema {
+    /* la foto del tema */
+    height: 150px;
+}
+
+.articleCom1{
+    width: 400px;
+    background-color: rgb(245, 242, 242);
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+.hrTopBot {
+    /* la linea que separa el encabezado y el pie de pag del cuerpo */
+    height: 2px;
+    color: #2C52B0;
+    background-color: #2C52B0;
+}
+
+.pPiePag {
+    /*parrafo del pie de pagina*/
+    /* el valor puede ser dado: nombre de color, hexadecimal, rgb(94, 94, 136) o rgba (94, 94, 136, .5)*/
+    color: rgb(94, 94, 136);
+    font-size: 12px;
+    /* margin: 20px; */
+}
+
+.footerDivIzq {
+    float: left;
+    width: 5%
+        /*
+height: 80px;
+background-color: lightgrey;
+border-radius: 5px;
+box-shadow: 2px 2px 5px black;  /* genera una sombra en la caja */
+
+}
+
+.footerDivDer {
+    float: right;
+    width: 95%;
+
+}

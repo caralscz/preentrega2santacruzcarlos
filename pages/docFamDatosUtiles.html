@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- con link vinculamos al CSS que queremos -->
+    <title>Documentos Familiares</title>
+    <!--Link a los fonts de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Documentos Familiares</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Documentos Familiares</h1>
+        </div>
+        <div>
+            <nav>
+                <ul class="ulBarraNavegacion">
+                    <li class="liBarraNavegacion"><a href="../index.html"><img src="../assets/img/icons_home.png"
+                                alt="Home"></a>
+                    </li>
+                    <li class="liBarraNavegacion"><a href="./docFamHistorias.html">Historias</a></li>
+                    <li class="liBarraNavegacion"><a href="./docFamFotos.html">Fotos</a></li>
+                    <li class="liBarraNavegacion"><a href="./docFamDatosUtiles.html">Datos &uacute;tiles</a></li>
+                    <li class="liBarraNavegacion"><a href="./docFamContacto.html">Contacto</a></li>
+                    <li class="liBarraNavegacion"><a href="./docFamIngreso.html"><img
+                                src="../assets/img/icons_login.png" alt="Ingresar"></a></li>
+                </ul>
+            </nav>
+
+            <hr class="hrTopBot">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Datos &uacute;tiles</h2>
+        </section>
+        <section>
+            <article class="articleCom1">
+                <h2></h2>
+                <img src="../assets/img/agenda.jpeg" alt="Contacto" class="imgTema">
+                <p>Identificandose por su nombre y apellido, una persona escribe aqu&iacute;, datos &uacute;tiles como
+                    en una agenda, aniversarios o direcciones, profesionales, etc</p>
+            </article>
+
+            <article class="articleCom1">
+                <h2>Escribir su mensaje en la agenda</h2>
+                <form action="./docFamMensaje.html" method="get">
+                    <label for="nombre">Nombres y apellidos (*):</label>
+                    <input type="text" id="nombre" name="Nombre" required><br> <br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="fecha">Fecha del evento a registrar (*):</label>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <label for="mensaje">Evento a registrar (*):</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p>(*) Dato requerido</p>
+            </article>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <hr class="hrTopBot">
+        <div class="footerDivIzq">
+            <img src="../assets/img/Group.png" alt="Documentos familiares" width="40" height="40">
+        </div>
+
+        <div class="footerDivDer">
+            <p class="pPiePag"> Documentos familiares se hace para registrar y recordar a una familia de
+                inmigrantes en
+                particular<br>
+                Curso coderhouse de Full Stack iniciado en diciembre de 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
