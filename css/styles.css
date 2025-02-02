@@ -1,5 +1,5 @@
 /* Estilos para el sitio Documentos familiares
-Coder house entrega 01 
+Coder house entrega 02 
 */
 /* reset de CSS de los elementos de default que aplican los navegadores 
 */
@@ -41,6 +41,13 @@ h1 {
     color: rgb(66, 66, 226);
 }
 
+.img15 {
+    /* los iconos home e ingresar de la barra horizontal */
+    width: 15px;
+    margin-right: .625rem;
+
+}
+
 header div nav img {
     /* los iconos home e ingresar de la barra horizontal */
     width: 15px;
@@ -54,23 +61,104 @@ header div nav img {
     /*mantiene la relación de aspecto?*/
 }
 
-.imgTema {
-    /* la foto del tema */
-    height: 150px;
+/* Media query para 480 768 1024*/
+.lasFotos {
+    display: grid;
+    padding: .625rem;
+    gap: .625rem;
+    border: 1px solid rgb(212, 216, 220);
+    border-radius: .3125rem;
+    /* margin: 10px;
+    box-sizing: border-box; */
 }
 
-.articleCom1{
-    width: 400px;
+@media (min-width: 30rem) {  /*480px*/
+    .lasFotos {
+        grid-template-columns: 12fr;
+    }
+}
+
+@media (min-width: 48rem) {    /*768px*/
+    .lasFotos {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+@media (min-width: 64rem) { /*1024px*/
+    .lasFotos {
+        grid-template-columns: 4fr 4fr 4fr;
+    }
+}
+
+@media (min-width: 75rem) {    /*1200px*/
+    .lasFotos {
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+}
+
+.unaFoto {
+    display: flex;
+    flex-direction: column;
+    padding: .3125rem;
+    align-items: center;
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    background-color: rgb(244, 244, 187);
+}
+
+
+.imgFoto {    /* la foto del album */
+    width: 15.625rem;
+    /*250px*/
+}
+
+.imgTema {    /* la foto del tema */
+    height: 100px;
+}
+
+.articleCom0 {
+    margin-top: 20px;
+}
+
+.articleCom1 {
+    width: 500px;
     background-color: rgb(245, 242, 242);
-    margin-bottom: 10px;
+    margin-top: 10px;
     border-radius: 10px;
-
+    display: flex;
+    flex-direction: row;
 }
+
+.articleCom2 {
+    width: 500px;
+    background-color: rgb(245, 242, 242);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* la linea que separa el encabezado y el pie de pag del cuerpo */
 .hrTopBot {
-    /* la linea que separa el encabezado y el pie de pag del cuerpo */
     height: 2px;
     color: #2C52B0;
     background-color: #2C52B0;
+}
+
+nav div ul li a:hover {
+    background-color: #7fb0d3;
+    color: white;
+}
+
+.navMenu:hover {
+    background-color: #7fb0d3;
+    color: white;
+}
+
+footer div {
+    background-color: #e3f2fd;
+}
+
+footer div div p {
+    margin: 1px;
 }
 
 .pPiePag {
